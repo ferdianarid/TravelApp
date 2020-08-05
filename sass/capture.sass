@@ -1,0 +1,80 @@
+@mixin transitions($transitionss)
+    -webkit-transition: $transitionss
+    -o-transition: $transitionss
+    -moz-transition: $transitionss
+    -ms-transition: $transitionss
+
+.capture
+    width: 100%
+    margin-bottom: 80px
+    padding: 40px 0
+    .capture1
+        background-image: url('../assets/sunglass.jpg')
+        background-size: cover
+        background-position: center center
+        background-repeat: no-repeat
+        height: 300px
+        width: 100%
+        border-radius: 10px
+        &::after
+            content: ''
+            width: 90%
+            height: 100%
+            background-image: url('../assets/bradenburg.jpg')
+            background-size: cover
+            position: absolute
+            background-repeat: no-repeat
+            top: -10%
+            left: 5%
+            z-index: -2
+            border-radius: 10px
+        &:hover::after
+            z-index: 3
+            left: 0
+            top: 0
+            width: 100%
+    h3,
+    p
+        padding-left: 50px
+    h3
+        font-weight: bold
+    p
+        padding-top: 20px
+        line-height: 1.7em
+.capture2
+    width: 100%
+    margin-bottom: 80px
+    padding: 40px 0
+    .capture2
+        background-image: url('../assets/coconut.jpg')
+        background-size: cover
+        background-position: center left
+        background-repeat: no-repeat
+        height: 300px
+        width: 100%
+        border-radius: 10px
+        &::after
+            content: ''
+            width: 90%
+            height: 100%
+            background-image: url('../assets/flight.jpg')
+            background-size: cover
+            position: absolute
+            background-repeat: no-repeat
+            top: -10%
+            left: -5%
+            z-index: -2
+            border-radius: 10px
+        &:hover::after
+            z-index: 3
+            left: 0
+            top: 0
+            width: 100%
+    h3,
+    p
+        padding-right: 50px
+    h3
+        font-weight: bold
+    p
+        padding-top: 20px
+        line-height: 1.7em

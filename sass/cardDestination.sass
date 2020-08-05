@@ -1,0 +1,34 @@
+@mixin transforms( $translates )
+    transform: translateY($translates)
+
+.cardDestination
+    width: 100%
+    margin-top: 80px
+    margin-bottom: 80px
+    display: flex
+    justify-content: space-around
+    .card
+        margin: 1em 1.5em
+        width: 18rem
+        border-radius: 10px
+        border: none
+        box-shadow: 0 10px 20px 0 #ececec80
+        transition: .4s ease-out
+        img
+            height: 180px
+            border-radius: 10px 10px 0 0
+        h5
+            font-weight: bold
+            padding-top: 10px
+        p
+            color: #9e9e9e
+            font-weight: 400
+            padding-top: 3px
+            padding-bottom: 10px
+            font-size: 14px
+            line-height: 1.7em
+        &:hover
+            transform: translateY(-15px)
+
+.loadmore
+    margin-bottom: 120px

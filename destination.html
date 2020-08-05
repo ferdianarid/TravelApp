@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel - Find your Destination</title>
+    <link rel="icon" href="assets/airplane.svg">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Billion+Dreams">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="node_modules/swiper/swiper-bundle.css">
+    <link rel="stylesheet" href="node_modules/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="node_modules/aos/dist/aos.css">
+    <link rel="stylesheet" href="stylesheets/destination.css">
+</head>
+<body>
+    <!-- Whatsapp -->
+    <a class="whatsapp" href="https://web.whatsapp.com/send?phone=6281259051310&amp;text=Hi%2c%20Travel" target="_blank" rel="nofollow noopener noreferrer">
+        <img src="assets/whatsappWhite.png" alt="whatsapp">
+        <p>WhatsApp</p>
+    </a>
+
+    <div class="banner">
+        <p><i class="fa fa-envelope"></i> ferdianahmadrozikin018@gmail.com</p>
+        <p><i class="fa fa-phone"></i> (+62) 812 5905 1310</p>
+        <p><i class="fa fa-internet-explorer"></i> travel@official.com</p>
+    </div>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a data-aos="fade-right" data-aos-duration="1200" class="navbar-brand" href="#"><img src="assets/airplane.svg" alt="" width="28"> Travel</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a data-aos="fade-down" data-aos-duration="1200" class="nav-item nav-link" href="homepage.html">Home</a>
+            <a data-aos="fade-down" data-aos-duration="1400" class="nav-item nav-link active" href="#">Destination  <span class="sr-only">(current)</span></a>
+            <a data-aos="fade-down" data-aos-duration="1600" class="nav-item nav-link" href="gallery.html">Gallery</a>
+            <a data-aos="fade-down" data-aos-duration="1800" class="nav-item nav-link" href="order.html">Order</a>
+            <a data-aos="fade-down" data-aos-duration="2000" class="nav-item nav-link" href="login.html">Login</a>
+            <a data-aos="fade-down" data-aos-duration="2200" href="register.html" class="nav-item btn btn-secondary primarycolor ml-4">Register</a>
+          </div>
+        </div>
+      </nav>
+
+      <div class="jumbotron jumbotron-fluid">
+        <!-- Swiper -->
+          <div class="swiper-container">
+              <div class="swiper-wrapper">
+              <div class="swiper-slide"><h1 class="title">Find your favourite destination</h1>
+                  <p class="subtitle">Lets find your destination for fill your vacation</p></div>
+              <div class="swiper-slide"><h1 class="title">Restart your mood with travel</h1>
+                  <p class="subtitle">Lets find your destination for fill your vacation</p></div>
+              <div class="swiper-slide"><h1 class="title">Enjoy the destination</h1>
+                  <p class="subtitle">Lets find your destination for fill your vacation</p></div>
+              <div class="swiper-slide"><h1 class="title">Forget work and get vacation</h1>
+                  <p class="subtitle">Lets find your destination for fill your vacation</p></div>
+              </div>
+              <!-- Add Pagination -->
+              <div class="swiper-pagination"></div>
+              <!-- Add Arrows -->
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+          </div>
+      <!-- </div> -->
+    </div>
+
+    <div data-aos="fade-right" data-aos-duration="1200" class="container reservation">
+        <div class="top">
+          <h2>What's your favourite tour ?</h2>
+          <p>Last search &nbsp; <i class="fa fa-chevron-right"></i></p>
+        </div>
+        <hr>
+        <div class="row colreservation">
+            <div class="col-md-2">
+                <div class="form-group">
+                  <label for="from"><i class="fa fa-map-marker"></i> &nbsp; Location</label>
+                  <input type="email" class="form-control" id="from" aria-describedby="from" placeholder="Berlin">
+              </div>
+          </div>
+          <div class="col-md-2">
+              <div class="form-group">
+                  <label for="destination"><i class="fa fa-map-marker"></i> &nbsp; Country</label>
+                  <input type="email" class="form-control" id="destination" aria-describedby="destination" placeholder="Germany">
+              </div>
+          </div>
+          <div class="col-md-3">
+              <div class="form-group">
+                <label for="destination"><i class="fa fa-minus"></i> &nbsp; Price ( Min )</label>
+                <input type="text" class="form-control" aria-describedby="search" placeholder="400000">
+              </div>
+          </div>
+          <div class="col-md-3">
+              <div class="form-group">
+                <label for="destination"><i class="fa fa-plus"></i> &nbsp; Price ( Max )</label>
+                <input type="text" class="form-control" aria-describedby="search" placeholder="1200000">
+              </div>
+          </div>
+          <div class="col-md-2">
+              <div class="form-group">
+                  <button class="btn btn-secondary btn-block primarycolor" id="searchreservation">Search</button>
+              </div>
+          </div>
+        </div>
+    </div>
+
+    <div class="container cardDestination">
+        <div class="row">
+            <div class="col-md-4">
+                <div data-aos="fade-down" data-aos-duration="1600" class="card">
+                    <img src="assets/opera.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <small class="text-primary"><span class="fa fa-map-marker"></span>&nbsp; Sydney Australia</small>
+                      <h5 class="card-title">Opera House &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; $120</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="#" class="btn btn-primary btn-block">Show details</a>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-md-4">
+                <div data-aos="fade-down" data-aos-duration="1600" data-aos-delay="400" class="card">
+                    <img src="assets/liberty.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <small class="text-primary"><span class="fa fa-map-marker"></span>&nbsp; United States</small>
+                      <h5 class="card-title">Liberty Statue &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; $89</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="#" class="btn btn-primary btn-block">Show details</a>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-md-4">
+                <div data-aos="fade-down" data-aos-duration="1600" data-aos-delay="800" class="card">
+                    <img src="assets/singapore.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <small class="text-primary"><span class="fa fa-map-marker"></span>&nbsp; Singapore</small>
+                      <h5 class="card-title">Singapore Merlion &nbsp; $85</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="#" class="btn btn-primary btn-block">Show details</a>
+                    </div>
+                  </div>
+            </div>
+        </div>
+    </div>
+    <div class="container cardDestination">
+        <div class="row">
+            <div class="col-md-4">
+                <div data-aos="fade-down" data-aos-duration="1600" class="card">
+                    <img src="assets/paris.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <small class="text-primary"><span class="fa fa-map-marker"></span>&nbsp; Paris France</small>
+                      <h5 class="card-title">Eiffle Tower &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; $108</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="#" class="btn btn-primary btn-block">Show details</a>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-md-4">
+                <div data-aos="fade-down" data-aos-duration="1600" data-aos-delay="400" class="card">
+                    <img src="assets/osaka.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <small class="text-primary"><span class="fa fa-map-marker"></span>&nbsp; Osaka Japan</small>
+                      <h5 class="card-title">Osaka Castle &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; $88</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="#" class="btn btn-primary btn-block">Show details</a>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-md-4">
+                <div data-aos="fade-down" data-aos-duration="1600" data-aos-delay="800" class="card">
+                    <img src="assets/bradenburg.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <small class="text-primary"><span class="fa fa-map-marker"></span>&nbsp; Berlin Germany</small>
+                      <h5 class="card-title">Bradenburg Gate &nbsp; &nbsp; $95</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="#" class="btn btn-primary btn-block">Show details</a>
+                    </div>
+                  </div>
+            </div>
+        </div>
+    </div>
+    <div class="container cardDestination">
+        <div class="row">
+            <div class="col-md-4">
+                <div data-aos="fade-down" data-aos-duration="1600" class="card">
+                    <img src="assets/sunglass.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <small class="text-primary"><span class="fa fa-map-marker"></span>&nbsp; Nusa Bali</small>
+                      <h5 class="card-title">Nusa Dua Beach &nbsp; &nbsp; $100</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="#" class="btn btn-primary btn-block">Show details</a>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-md-4">
+                <div data-aos="fade-down" data-aos-duration="1600" data-aos-delay="400" class="card">
+                    <img src="assets/stone.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <small class="text-primary"><span class="fa fa-map-marker"></span>&nbsp; Sydney Australia</small>
+                      <h5 class="card-title">Inside Stone &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; $108</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="#" class="btn btn-primary btn-block">Show details</a>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-md-4">
+                <div data-aos="fade-down" data-aos-duration="1600" data-aos-delay="800" class="card">
+                    <img src="assets/sea.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <small class="text-primary"><span class="fa fa-map-marker"></span>&nbsp; Raja Ampat Island</small>
+                      <h5 class="card-title">Raja Ampat &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; $82</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="#" class="btn btn-primary btn-block">Show details</a>
+                    </div>
+                  </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container loadmore">
+        <div class="row">
+            <div class="col-md-2 offset-md-5">
+                <button class="btn btn-outline-primary btn-block mx-auto">Load more</button>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="brands">
+        <h4>Travel</h4>
+        <p>Company who focused on offering a tarvel destination. Offer tickets and vacation with any facilities.</p>
+        <small>&copy;2020. Travel Company. All Right Reserved &trade;</small>
+      </div>
+        <div class="featuresLink">
+          <h4>Features</h4>
+          <p>Order</p>
+          <p>Pricing</p>
+          <p>Destination</p>
+          <p>About</p>
+        </div>
+        <div class="discoverLink">
+          <h4>Discover</h4>
+          <p>Facebook</p>
+          <p>Instagram</p>
+          <p>Pinterest</p>
+          <p>Dribbble</p>
+        </div>
+        <div class="form">
+          <h4>Feedback</h4>
+          <input type="text" class="form-control" aria-describedby="feedback" placeholder="Enter  Feedback">
+        <button class="btn btn-secondary btn-block">Submit</button>
+        </div>
+      </footer>
+
+
+    <script src="node_modules/bootstrap/jquery-3.5.1.slim.min.js"></script>
+    <script src="node_modules/bootstrap/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="node_modules/swiper/swiper-bundle.js"></script>
+    <script src="node_modules/swiper/swiper-bundle.min.js"></script>
+    <script src="node_modules/moment/dist/moment.js"></script>
+    <script src="js/date.js"></script>
+    <script src="node_modules/aos/dist/aos.js"></script>
+    <script type="text/javascript">
+        var swiper = new Swiper('.swiper-container', {
+        pagination: {
+            el: '.swiper-pagination'
+        },
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+        autoplay: true,
+        loop: true
+        });
+
+        AOS.init()
+    </script>
+</body>
+</html>

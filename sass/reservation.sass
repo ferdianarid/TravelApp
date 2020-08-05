@@ -1,0 +1,44 @@
+@mixin placeholder-color($color , $weight)
+  &::-webkit-input-placeholder
+      color: $color
+      font-weight: $weight
+  &:-moz-placeholder
+      color: $color
+      font-weight: $weight
+  &::-moz-placeholder
+      color: $color
+      font-weight: $weight
+  &:-ms-input-placeholder
+      color: $color
+      font-weight: $weight
+
+.reservation
+    width: 100%
+    background-color: #FFF
+    margin-top: -150px
+    border-radius: 8px
+    box-shadow: 0 10px 20px 0 #dbdbdb80
+    .top
+        display: flex
+        width: 100%
+        padding: 1.5em 1.5em 0em
+        h2
+            font-weight: bold
+            color: #333333
+            font-family: 'Roboto', sans-serif
+        p
+            margin-left: auto
+            padding: .8em 1em 0em
+            color: #9bbfcf
+            &:hover
+                cursor: pointer
+    .colreservation
+        padding: 1.5em
+        justify-content: space-around
+        input
+            @include placeholder-color(#333333 ,600)
+            font-family: 'Roboto', sans-serif
+        label
+            color: #888888
+        #searchreservation
+            margin-top: 32px

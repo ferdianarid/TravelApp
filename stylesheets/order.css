@@ -1,0 +1,443 @@
+.whatsapp {
+  padding: 2px 20px;
+  background-color: #4caf50;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  z-index: 5;
+  bottom: 5%;
+  right: 3%;
+  text-decoration: none;
+  position: fixed;
+  box-shadow: 0 10px 20px 0 rgba(53, 64, 90, 0.2);
+}
+.whatsapp:hover {
+  text-decoration: none;
+}
+.whatsapp img {
+  width: 28px;
+}
+.whatsapp p {
+  padding-top: 15px;
+  padding-left: 8px;
+  font-weight: bold;
+  color: #FFF;
+  font-size: 16px;
+}
+
+body {
+  background-color: #F8F8F8;
+  font-family: "Poppins", sans-serif;
+}
+
+.primarycolor {
+  background-color: #9bbfcf !important;
+  border: 1px solid #9bbfcf;
+}
+.primarycolor:active {
+  border: 1px solid #9bbfcf;
+}
+
+.banner {
+  position: relative;
+  z-index: 4;
+  height: 40px;
+  width: 100%;
+  padding-left: 100px;
+  padding-right: 100px;
+  background-color: #9bbfcf;
+  display: flex;
+  justify-content: space-between;
+}
+.banner p {
+  line-height: 40px;
+  color: #FFF;
+}
+
+.navbar {
+  padding: 20px 100px;
+  position: relative;
+  z-index: 3;
+}
+.navbar .navbar-toggler {
+  position: relative;
+  z-index: 4;
+}
+.navbar .navbar-brand {
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  color: #b6b7ff;
+}
+.navbar .navbar-nav {
+  margin-left: auto;
+}
+.navbar .navbar-nav .nav-link {
+  margin-left: 30px;
+}
+
+.jumbotron {
+  margin-top: -80px;
+  height: 700px;
+  background-image: url("../assets/banner.jpg");
+  background-size: cover;
+  text-align: center;
+  color: #FFF;
+}
+.jumbotron::after {
+  content: "";
+  height: 100%;
+  width: 100%;
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0), black);
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  opacity: 0.3;
+}
+.jumbotron .swiper-container {
+  position: relative;
+  z-index: 4;
+  margin: auto;
+  margin-top: 200px;
+  width: 80%;
+}
+.jumbotron .swiper-container .swiper-wrapper {
+  margin-bottom: 150px;
+}
+.jumbotron .swiper-container .swiper-button-next,
+.jumbotron .swiper-container .swiper-button-prev {
+  color: #FFF;
+}
+.jumbotron .headline {
+  position: relative;
+  z-index: 3;
+  font-family: "Roboto", sans-serif;
+}
+.jumbotron .headline .title {
+  padding-top: 200px;
+  font-weight: bold;
+  padding-bottom: 10px;
+}
+.jumbotron .headline input {
+  width: 50%;
+  margin: auto;
+  margin-top: 40px;
+  padding: 1.5em 1em;
+}
+
+.order {
+  margin-top: 50px;
+  margin-bottom: 120px;
+}
+.order .breadcrumb {
+  width: 14%;
+  margin-bottom: 40px;
+}
+.order .ticket {
+  width: 90%;
+  margin-right: 10%;
+  background-color: #fff;
+  padding: 12px;
+  height: 180px;
+  display: flex;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px 0 #dbdbdb80;
+}
+.order .ticket .img-ticket {
+  background-image: url("../assets/opera.jpg");
+  width: 30%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  border-radius: 4px;
+}
+.order .ticket .descriptionTicket {
+  width: 70%;
+  padding: 16px 20px 0 20px;
+  height: 100%;
+}
+.order .ticket .descriptionTicket h4 {
+  font-weight: bold;
+}
+.order .ticket .descriptionTicket p {
+  padding-top: 12px;
+}
+.order .ticket .descriptionTicket .prices {
+  display: flex;
+  justify-content: space-between;
+}
+.order .ticket:nth-child(2) {
+  margin-top: 40px;
+}
+.order .ticket:nth-child(2) .img-ticket {
+  background-image: url("../assets/singapore.jpg");
+}
+.order .ticket:nth-child(3) {
+  margin-top: 40px;
+}
+.order .ticket:nth-child(3) .img-ticket {
+  background-image: url("../assets/liberty.jpg");
+}
+.order .ticket:nth-child(4) {
+  margin-top: 40px;
+}
+.order .ticket:nth-child(4) .img-ticket {
+  background-image: url("../assets/osaka.jpg");
+}
+.order .checkout {
+  width: 100%;
+  margin: auto;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px 0 #dbdbdb80;
+  padding: 30px;
+}
+.order .checkout h4 {
+  font-weight: bold;
+}
+.order .checkout .total {
+  display: flex;
+  justify-content: space-between;
+}
+.order .checkout .total h5 {
+  font-weight: bold;
+}
+.order .metode {
+  margin-top: 30px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px 0 #dbdbdb80;
+  padding: 20px 30px;
+}
+.order .metode h4 {
+  font-weight: bold;
+}
+.order .metode .selects {
+  margin-top: 20px;
+  background-color: #f7f7f7;
+  border-radius: 4px;
+}
+.order .metode .selects p {
+  padding: 10px;
+}
+
+.reorder {
+  margin-bottom: 120px;
+  width: 60%;
+}
+.reorder a {
+  text-decoration: none;
+}
+.reorder a:hover {
+  color: #FFF;
+}
+
+footer {
+  width: 100%;
+  background-color: #9bbfcf;
+  display: flex;
+  padding: 100px;
+  color: #FFF;
+}
+footer h4 {
+  font-weight: bold;
+  padding-bottom: 20px;
+  font-family: "Roboto", sans-serif;
+}
+footer .brands {
+  width: 40%;
+  height: 100%;
+  padding-right: 30px;
+}
+footer .brands p {
+  line-height: 1.7em;
+  padding-bottom: 10px;
+}
+footer .featuresLink {
+  width: 20%;
+  height: 100%;
+  padding-left: 50px;
+}
+footer .discoverLink {
+  width: 20%;
+  height: 100%;
+  padding-left: 30px;
+}
+footer .form {
+  width: 20%;
+  height: 100%;
+}
+footer .form button {
+  margin-top: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .navbar {
+    padding: 20px;
+  }
+
+  .banner {
+    display: none;
+  }
+
+  .jumbotron {
+    background-position: center center;
+  }
+
+  .swiper-button-next,
+.swiper-button-prev {
+    margin-top: 20px;
+  }
+
+  .reservation {
+    width: 90%;
+  }
+  .reservation .top {
+    flex-direction: column;
+  }
+  .reservation .top h2 {
+    font-size: 28px;
+  }
+  .reservation .top p {
+    text-align: center;
+    margin: auto;
+  }
+
+  .feature {
+    flex-direction: column;
+    padding: 0 40px;
+  }
+  .feature .childfeature {
+    width: 100%;
+    margin: auto;
+    margin-top: 30px;
+  }
+
+  .line {
+    padding: 0 20px 70px;
+  }
+  .line .discover .card {
+    width: 100%;
+    margin-top: 30px;
+  }
+
+  .capture {
+    width: 90%;
+    margin: auto;
+  }
+  .capture h3,
+.capture p {
+    padding-left: 0;
+    padding-right: 20px;
+  }
+  .capture h3 {
+    padding-top: 50px;
+  }
+  .capture p {
+    padding-top: 10px;
+  }
+
+  .capture2 h3,
+.capture2 p {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+  .capture2 h3 {
+    padding-top: 50px;
+  }
+  .capture2 p {
+    padding-top: 10px;
+    padding-bottom: 50px;
+  }
+  .capture2 .capture2 {
+    width: 90%;
+    margin: auto;
+  }
+  .capture2 .capture2::after {
+    top: -10%;
+    left: 5%;
+  }
+
+  .newsletter {
+    width: 90%;
+    margin: auto;
+    padding: 20px;
+    margin-bottom: 120px;
+  }
+  .newsletter button {
+    margin-left: 10px;
+  }
+
+  .cardDestination {
+    width: 87%;
+    margin-left: 13%;
+  }
+  .cardDestination .card {
+    width: 18rem;
+    margin-top: 50px;
+  }
+
+  .loadmore {
+    width: 50%;
+  }
+
+  .grid-container {
+    margin-top: 100px;
+    padding: 40px;
+    display: flex;
+    height: auto;
+    flex-direction: column;
+  }
+  .grid-container .grid-item {
+    height: 250px;
+  }
+
+  .order .breadcrumb {
+    width: 34%;
+  }
+  .order .ticket {
+    width: 100%;
+  }
+  .order .ticket .img-ticket {
+    width: 35%;
+  }
+  .order .ticket .descriptionTicket {
+    width: 65%;
+  }
+  .order .ticket .descriptionTicket h4 {
+    font-size: 18px;
+  }
+  .order .checkout {
+    margin-top: 60px;
+  }
+  .order .checkout h4 {
+    font-size: 18px;
+  }
+  .order .metode {
+    margin-top: 60px;
+  }
+  .order .metode h4 {
+    font-size: 18px;
+  }
+
+  footer {
+    flex-direction: column;
+    padding: 50px;
+  }
+  footer .brands,
+footer .featuresLink,
+footer .discoverLink,
+footer .form {
+    width: 100%;
+  }
+  footer .featuresLink,
+footer .discoverLink,
+footer .form {
+    margin-top: 70px;
+    padding-left: 0;
+  }
+}
+
+/*# sourceMappingURL=order.css.map */

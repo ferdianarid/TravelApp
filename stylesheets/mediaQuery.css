@@ -1,0 +1,116 @@
+@media screen and (max-width: 768px) {
+  .navbar {
+    padding: 20px;
+  }
+
+  .banner {
+    display: none;
+  }
+
+  .jumbotron {
+    background-position: center center;
+  }
+
+  .swiper-button-next,
+.swiper-button-prev {
+    margin-top: 20px;
+  }
+
+  .reservation {
+    width: 90%;
+  }
+  .reservation .top {
+    flex-direction: column;
+  }
+  .reservation .top h2 {
+    font-size: 28px;
+  }
+  .reservation .top p {
+    text-align: center;
+    margin: auto;
+  }
+
+  .feature {
+    flex-direction: column;
+    padding: 0 40px;
+  }
+  .feature .childfeature {
+    width: 100%;
+    margin: auto;
+    margin-top: 30px;
+  }
+
+  .line {
+    padding: 0 20px 70px;
+  }
+  .line .discover .card {
+    width: 100%;
+    margin-top: 30px;
+  }
+
+  .capture {
+    width: 90%;
+    margin: auto;
+  }
+  .capture h3,
+.capture p {
+    padding-left: 0;
+    padding-right: 20px;
+  }
+  .capture h3 {
+    padding-top: 50px;
+  }
+  .capture p {
+    padding-top: 10px;
+  }
+
+  .capture2 h3,
+.capture2 p {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+  .capture2 h3 {
+    padding-top: 50px;
+  }
+  .capture2 p {
+    padding-top: 10px;
+    padding-bottom: 50px;
+  }
+  .capture2 .capture2 {
+    width: 90%;
+    margin: auto;
+  }
+  .capture2 .capture2::after {
+    top: -10%;
+    left: 5%;
+  }
+
+  .newsletter {
+    width: 90%;
+    margin: auto;
+    padding: 20px;
+    margin-bottom: 120px;
+  }
+  .newsletter button {
+    margin-left: 10px;
+  }
+
+  footer {
+    flex-direction: column;
+    padding: 50px;
+  }
+  footer .brands,
+footer .featuresLink,
+footer .discoverLink,
+footer .form {
+    width: 100%;
+  }
+  footer .featuresLink,
+footer .discoverLink,
+footer .form {
+    margin-top: 70px;
+    padding-left: 0;
+  }
+}
+
+/*# sourceMappingURL=mediaQuery.css.map */

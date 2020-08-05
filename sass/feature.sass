@@ -1,0 +1,31 @@
+@mixin corners($radius)
+    border-radius: $radius
+    -o-border-radius: $radius
+    -ms-border-radius: $radius
+    -moz-border-radius: $radius
+    -webkit-border-radius: $radius
+
+.feature
+    width: 100%
+    padding: 0 100px
+    margin-top: 120px
+    display: flex
+    justify-content: center
+    margin-bottom: 120px
+.childfeature
+    background-color: #FFF
+    width: 30%
+    padding: 2em 2.5em
+    margin: 0 20px
+    @include corners(8px)
+    img
+        width: 40%
+    h3
+        font-weight: 600
+        color: #333333
+        font-family: 'Roboto', sans-serif
+    p
+        text-align: justify
+        padding-top: 10px
+        line-height: 1.7em
+        color: #707070
